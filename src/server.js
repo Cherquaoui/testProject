@@ -7,7 +7,7 @@ const app =express();
 app.use(express.static('./dist/test-project'));
 
 app.get('/*', (req,res)=>{
-  npm install -g express
+
   res.sendFile(path.join(__dirname+'/dist/test-project/index.html'));
 
 });
